@@ -1,0 +1,228 @@
+/* Reset default margin and padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Set the background color to black */
+
+body {
+    height: 100%;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Set the text color to white */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    color: #ffffff;
+}
+
+
+/* Style the navbar */
+
+nav {
+    background-color: #000000;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+navbar a {
+    color: cca837;
+    text-decoration: none;
+    color: #cca837
+}
+
+navbar.brand {
+    color: #cca837;
+}
+
+
+/* Style the button */
+
+.btn {
+    background-color: #cca837;
+    color: #222222;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*Testimonial img*/
+
+responsive__img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Style the form input */
+
+.form-control {
+    background-color: #ffffff;
+    color: #222222;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/* Style the headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #cca837;
+}
+
+header {
+    background-color: #000000;
+    padding: 50px;
+    text-align: center;
+}
+
+
+/*Logo size*/
+
+.logo {
+    max-width: 10%;
+    /* Adjust the width as desired */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
+.logomobile {
+    display: hidden;
+    max-width: 12%;
+    /* Adjust the width as desired */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
+
+/* Style the paragraph text */
+
+p {
+    line-height: 1.5;
+}
+
+footer {
+    background-color: black;
+    font-family: Tahoma, Arial;
+    font-size: 1em;
+    color: White;
+    position: absolute;
+    bottom: 0px;
+    height: 4em;
+    width: 100%;
+}
+
+
+/* Style the link */
+
+a {
+    color: #cca837;
+    text-decoration: none;
+}
+
+
+/* Style the cards */
+
+.card {
+    background-color: #343a40;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*contact icons*/
+
+.contact-icon {
+    width: 50px;
+    /* Adjust the width as desired */
+    height: 50px;
+    /* Adjust the height as desired */
+}
+
+
+/* Media queries */
+
+@media (max-width: 768px) {
+    /* Adjust navbar for smaller screens */
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav li {
+        margin-bottom: 10px;
+    }
+    /* Adjust header padding for smaller screens */
+    header {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Adjust navbar and header padding for even smaller screens */
+    nav {
+        padding: 5px;
+    }
+    header {
+        padding: 10px;
+    }
+    /* Adjust button padding for smaller screens */
+    .btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for the smallest screens */
+    .card {
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Adjust logo to disappear on mobile screens to make ui friendly */
+    .logo {
+        display: none;
+    }
+}
+
+
+/* Adjust logo to appear on left hand side in mobile user mode*/
+
+@media (min-width: 768px) {
+    .logomobile {
+        display: none;
+    }
+}
