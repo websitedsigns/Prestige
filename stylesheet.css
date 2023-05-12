@@ -211,7 +211,10 @@ a {
     }
 }
 
-@media (max-width: 576px) {
+
+/* 2532x1170 pixels at 460ppi */
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
     /* Adjust logo to disappear on mobile screens to make ui friendly */
     .logo {
         display: none;
@@ -221,7 +224,10 @@ a {
 
 /* Adjust logo to appear on left hand side in mobile user mode*/
 
-@media (min-width: 768px) {
+
+/* 2532x1170 pixels at 460ppi */
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
     .logomobile {
         display: none;
     }
