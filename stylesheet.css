@@ -10,9 +10,14 @@
 /* Set the background color to black */
 
 body {
-    height: 100%;
+    min-height: 100vh;
+    /* Set a minimum height to occupy the full viewport */
     background-color: black;
     font-family: Arial, sans-serif;
+    display: flex;
+    /* Use flexbox to position the content */
+    flex-direction: column;
+    /* Arrange the content in a column */
 }
 
 
@@ -44,13 +49,12 @@ nav ul {
     justify-content: space-between;
 }
 
-navbar a {
-    color: cca837;
+nav a {
+    color: #cca837;
     text-decoration: none;
-    color: #cca837
 }
 
-navbar.brand {
+nav .navbar-brand {
     color: #cca837;
 }
 
@@ -68,9 +72,9 @@ navbar.brand {
 }
 
 
-/*Testimonial img*/
+/* Testimonial img */
 
-responsive__img {
+.responsive__img {
     max-width: 100%;
     height: auto;
 }
@@ -107,21 +111,17 @@ header {
 }
 
 
-/*Logo size*/
+/* Logo size */
 
 .logo {
     max-width: 10%;
-    /* Adjust the width as desired */
     height: auto;
-    /* Maintain the aspect ratio */
 }
 
 .logomobile {
-    display: hidden;
+    display: none;
     max-width: 12%;
-    /* Adjust the width as desired */
     height: auto;
-    /* Maintain the aspect ratio */
 }
 
 
@@ -129,17 +129,6 @@ header {
 
 p {
     line-height: 1.5;
-}
-
-footer {
-    background-color: black;
-    font-family: Tahoma, Arial;
-    font-size: 1em;
-    color: White;
-    position: absolute;
-    bottom: 0px;
-    height: 4em;
-    width: 100%;
 }
 
 
@@ -162,29 +151,74 @@ a {
 }
 
 
-/*contact icons*/
+/* Contact icons */
 
 .contact-icon {
     width: 50px;
-    /* Adjust the width as desired */
     height: 50px;
-    /* Adjust the height as desired */
 }
 
 
-/* Media queries */
+/* Footer */
 
-@media (max-width: 768px) {
-    /* Adjust navbar for smaller screens */
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+footer {
+    background-color: black;
+    font-family: Tahoma, Arial;
+    font-size: 1em;
+    color: white;
+    margin-top: auto;
+    /* Push the footer to the bottom */
+    padding: 10px;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflow */
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) for overflowing text */
+}
+
+
+/* Media query for small screens */
+
+@media (max-width: 120px) {
+    footer {
+        text-align: center;
+        /* Center the text on small screens */
     }
-    nav li {
-        margin-bottom: 10px;
+    /* Extra small devices (phones) */
+    @media (max-width: 575.98px) {
+        /* CSS rules for phones */
     }
-    /* Adjust header padding for smaller screens */
-    header {
-        display: none;
+    /* Small devices (tablets) */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        /* CSS rules for tablets */
+    }
+    /* Medium devices (laptops, desktops) */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        /* CSS rules for laptops and desktops */
+    }
+    /* Large devices (large laptops, desktops) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        /* CSS rules for large laptops and desktops */
+    }
+    /* Extra large devices (large desktops, TVs) */
+    @media (min-width: 1200px) {
+        /* CSS rules for large desktops and TVs */
+    }
+    /* Media queries for mobile devices */
+    @media (max-width: 767px) {
+        .navbar-nav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .navbar-nav .nav-item {
+            margin-bottom: 10px;
+        }
+        .navbar-collapse {
+            display: none;
+        }
+        .navbar-collapse.show {
+            display: block;
+        }
     }
 }
