@@ -1,4 +1,4 @@
-        /* Reset default margin and padding */
+    /* Reset default margin and padding */
     
     * {
         margin: 0;
@@ -32,6 +32,20 @@
     }
     /* Style the navbar */
     
+    .card {
+        background-color: #343a40;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    /* Contact icons */
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
     nav {
         background-color: #000000;
         padding: 20px;
@@ -50,7 +64,44 @@
     
     nav .navbar-brand {
         color: #cca837;
-        font-size: 18px;
+    }
+    /* Style the logo */
+    
+    .logo {
+        max-width: 10%;
+        height: auto;
+        display: none;
+        size: 10px;
+    }
+    
+    .logomobile {
+        display: block;
+        max-width: 20%;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    /* Style the header */
+    
+    header {
+        background-color: #000000;
+        padding: 10px;
+        text-align: center;
+    }
+    /* Style the headings */
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #cca837;
+    }
+    /* Style the paragraph text */
+    
+    p {
+        line-height: 1.5;
     }
     /* Style the button */
     
@@ -63,80 +114,9 @@
         font-weight: bold;
         cursor: pointer;
     }
-    /* Testimonial img */
+    /* Style the footer */
     
-    .responsive__img {
-        max-width: 100%;
-        height: auto;
-    }
-    /* Style the form input */
-    
-    .form-control {
-        background-color: #ffffff;
-        color: #222222;
-        border: none;
-        padding: 10px;
-        border-radius: 4px;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    /* Style the headings */
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: #cca837;
-    }
-    
-    header {
-        background-color: #000000;
-        padding: 50px;
-        text-align: center;
-    }
-    /* Logo size */
-    
-    .logo {
-        max-width: 10%;
-        height: auto;
-    }
-    
-    .logomobile {
-        display: none;
-        max-width: 12%;
-        height: auto;
-    }
-    /* Style the paragraph text */
-    
-    p {
-        line-height: 1.5;
-    }
-    /* Style the link */
-    
-    a {
-        color: #cca837;
-        text-decoration: none;
-    }
-    /* Style the cards */
-    
-    .card {
-        background-color: #343a40;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-    /* Contact icons */
-    
-    .contact-icon {
-        width: 50px;
-        height: 50px;
-    }
-    /* Footer */
-    
-    footer {
+    .footer {
         background-color: black;
         font-family: Tahoma, Arial;
         font-size: 1em;
@@ -151,45 +131,47 @@
         text-overflow: ellipsis;
         /* Add ellipsis (...) for overflowing text */
     }
+    
+    .footer p {
+        margin: 0;
+    }
     /* Media query for small screens */
     
-    @media (max-width: 120px) {
-        footer {
-            text-align: center;
-            /* Center the text on small screens */
+    @media (max-width: 767px) {
+        .navbar-nav {
+            flex-direction: column;
+            align-items: center;
         }
-        /* Small devices (tablets) */
-        @media (min-width: 576px) and (max-width: 767.98px) {
-            /* CSS rules for tablets */
+        .navbar-nav .nav-item {
+            margin-bottom: 10px;
         }
-        /* Medium devices (laptops, desktops) */
-        @media (min-width: 768px) and (max-width: 991.98px) {
-            /* CSS rules for laptops and desktops */
+        .navbar-collapse {
+            display: none;
         }
-        /* Large devices (large laptops, desktops) */
-        @media (min-width: 992px) and (max-width: 1199.98px) {
-            /* CSS rules for large laptops and desktops */
+        .navbar-collapse.show {
+            display: block;
         }
-        /* Extra large devices (large desktops, TVs) */
-        @media (min-width: 1200px) {
-            /* CSS rules for large desktops and TVs */
+        .logo {
+            display: none;
         }
-        /* Media queries for mobile devices */
-        @media (max-width: 767px) {
-            .navbar-nav {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .navbar-nav .nav-item {
-                margin-bottom: 10px;
-            }
-            .navbar-collapse {
-                display: none;
-            }
-            .navbar-collapse.show {
-                display: block;
-            }
-            .navbar-brand {
-                font-size: 10px;
-            }
+        .logomobile {
+            display: block;
+            max-width: 60%;
+            height: auto;
+            margin: 0 auto;
+            padding: 20px;
         }
+        header {
+            padding: 20px;
+        }
+        h1.display-4 {
+            font-size: 24px;
+        }
+        .lead {
+            font-size: 14px;
+        }
+        .btn.btn-primary.btn-lg {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+    }

@@ -10,16 +10,17 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <img src="images\image0.png" alt="logo" class="logomobile">
-        <a class="navbar-brand" href="index.html">Prestige Traditional Windows & Doors</a>
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="index.html">Prestige Traditional Windows & Doors</a>
 
+        </div>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
@@ -30,79 +31,95 @@
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-
+    <img src="images\image0.png" alt="logo" class="logomobile">
     <header class="container text-center my-5">
-        <img src="images\image0.png" alt="Prestige Logo" class="logo">
-        <h1 class=" display-4 ">P R E S T I G E </h1>
-        <h1 class="display-4 ">Traditional Windows & Doors </h1>
-        <p class="lead ">Full Renovation | Complete Replacements | Draughtproofing & repairs on timber | Sash windows | Casements | Doors | Energy Efficient Double Glazing | Carpentry</p>
-        <a href="# " class="btn btn-primary btn-lg ">Learn More</a>
-    </header>
+        <div class="logo-container">
+            <img src="images\image0.png" alt="Prestige Logo" class="logo">
 
-    <main>
-        <div class="container py-5 d-flex justify-content-center align-items-center">
-            <h2 class="text-center mb-5">Contact Us</h2>
-
-
-            <form action="contact.php" method="POST">
-                <div>
-                    <input type="email" placeholder="email@example.com" name="email" required />
+            <header class="container text-center my-5">
+                <div class="logo-container">
+                    <img src="images\image0.png" alt="Prestige Logo" class="logo">
                 </div>
-                <div>
-                    <input type="text" placeholder="Subject" name="subject" required />
-                </div>
-                <div>
-                    <textarea placeholder="Your message" name="body" required></textarea>
-                </div>
-                <div>
-                    <button type="submit">Send a message</button>
-                </div>
-            </form>
+                <h1 class="display-4">P R E S T I G E</h1>
+                <h1 class="display-4">Traditional Windows & Doors</h1>
+                <p class="lead">Full Renovation | Complete Replacements | Draughtproofing & repairs on timber | Sash windows | Casements | Doors | Energy Efficient Double Glazing | Carpentry</p>
+                <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+            </header>
 
-            <a target="_blank" href="https://www.instagram.com/prestigetwd/">
-                <img src="icons\iggold.png" class="contact-icon">
-            </a>
-            <a target="_blank" href="https://m.me/Prestigetwd">
-                <img src="icons\messgold.png" class="contact-icon">
-            </a>
-            <a target="_blank" href="mailto:enquiries.prestigetwd@gmail.com?subject=Enquiry">
-                <img src="icons\mail.png" class="contact-icon">
-            </a>
-
-            <a target="_blank" href="https://www.facebook.com/prestigeTWD">
-                <img src="icons\fbgold.png" class="contact-icon">
-            </a>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=447759065087">
-                <img src="icons\whatsappgold.png" class="contact-icon">
-            </a>
-            <a target="_blank" href="tel:+44759065087">
-                <img src="icons\phone.png" class="contact-icon">
-            </a>
-        </div>
-    </main>
+            <!-- jQuery and Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 
-    <footer class=" bg-dark text-light py-3 ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-md-6 ">
-                    <p>&copy; 2023 Prestige Traditional Windows & Doors</p>
-                </div>
-                <div class="col-md-6 text-right ">
-                    <p>Designed by WebsiteDSigns</p>
-                </div>
+            <div class="logo-media ">
+                <img src="images\image0.png " alt="Prestige Logo " class="logo ">
             </div>
-        </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+
+            <main>
+                <div class="container py-5 d-flex justify-content-center align-items-center">
+                    <h2 class="text-center mb-5">Contact Us</h2>
+
+
+                    <form action="contact.php" method="POST">
+                        <div>
+                            <input type="email" placeholder="email@example.com" name="email" required />
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Subject" name="subject" required />
+                        </div>
+                        <div>
+                            <textarea placeholder="Your message" name="body" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Send a message</button>
+                        </div>
+                    </form>
+
+                    <a target="_blank" href="https://www.instagram.com/prestigetwd/">
+                        <img src="icons\iggold.png" class="contact-icon">
+                    </a>
+                    <a target="_blank" href="https://m.me/Prestigetwd">
+                        <img src="icons\messgold.png" class="contact-icon">
+                    </a>
+                    <a target="_blank" href="mailto:enquiries.prestigetwd@gmail.com?subject=Enquiry">
+                        <img src="icons\mail.png" class="contact-icon">
+                    </a>
+
+                    <a target="_blank" href="https://www.facebook.com/prestigeTWD">
+                        <img src="icons\fbgold.png" class="contact-icon">
+                    </a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=447759065087">
+                        <img src="icons\whatsappgold.png" class="contact-icon">
+                    </a>
+                    <a target="_blank" href="tel:+44759065087">
+                        <img src="icons\phone.png" class="contact-icon">
+                    </a>
+                </div>
+            </main>
+
+
+            <footer class=" bg-dark text-light py-3 ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-md-6 ">
+                            <p>&copy; 2023 Prestige Traditional Windows & Doors</p>
+                        </div>
+                        <div class="col-md-6 text-right ">
+                            <p>Designed by WebsiteDSigns</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
 </body>
 
 </html>
