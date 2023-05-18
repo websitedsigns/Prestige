@@ -1,134 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prestige Traditional Windows and Doors</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        
+    </style>
 </head>
 
+<!--navbar-->
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <img src="images\image0.png" alt="logo" class="logomobile">
-        <a class="navbar-brand" href="home.html">Prestige Traditional Windows & Doors</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
-                </li>
-               
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="testimonials.html">Testimonials</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
-    <body>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="testimonials.html">Testimonials</a>
-                </li>
-            </ul>
-        </div>
-        </nav>
-        <header class="container text-center my-5">
-            <img src="images\image0.png" alt="Prestige Logo" class="logo">
-            <h1 class=" display-4 ">P R E S T I G E </h1>
-            <h1 class="display-4 ">Traditional Windows & Doors </h1>
-            <p class="lead ">Full Renovation | Complete Replacements | Draughtproofing & repairs on timber | Sash windows | Casements | Doors | Energy Efficient Double Glazing | Carpentry</p>
-            <a href="contact.html" class="btn btn-primary btn-lg ">Contact us</a>
-        </header>
-
-        <div class="container py-5">
-            <h2 class="text-center mb-5">Testimonials</h2>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 mb-4">
-                    <section class="container container--testimonials">
-                        <div class="testimonial">
-                            <p class="testimonial__text mb-25">
-                                Great Service. Friendly and Helpful with what I needed. First class service. Highly Recommend
-                            </p>
-
-                            <div class="testimonial__details">
-                                <div class="testimonial__img">
-                                    <img src="images\dan_testimonial.jpg" alt="#" />
-                                </div>
-                                <div class="testimonial__info">
-                                    <h4 class="testimonial__name">Dan</h4>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testimonial">
-                            <p class="testimonial__text mb-25">
-                                dkfigpjpmpmpmoompmpomkjnn
-                            </p>
-
-                            <div class="testimonial__details">
-                                <div class="testimonial__img">
-                                    <img src="" alt="" />
-                                </div>
-                                <div class="testimonial__info">
-                                    <h4 class="testimonial__name">
-                                        Joe Bloggs</h4>
-                                    <h5 class="testimonial__job">Customer Service Representative</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial">
-                            <p class="testimonial__text mb-25">
-                                wgogrk[okprgp]ooj
-                            </p>
-
-                            <div class="testimonial__details">
-                                <div class="testimonial__img">
-                                    <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Terrell O'Keefe" />
-                                </div>
-                                <div class="testimonial__info">
-                                    <h4 class="testimonial__name">joanna bloggs</h4>
-                                    <h5 class="testimonial__job">Marketing Professional</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container d-flex justify-content-center"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+<!--main content -->
+        <div class="content">
+            <header class="container text-center my-5">
+                <img src="images/image0.png" class="img-fluid rounded mx-auto d-block" alt="logo" style="max-width: 200px;">
+                <h1>P R E S T I G E</h1>
+                <h1>Traditional Windows & Doors</h1>
+                <p>Full Renovation | Complete Replacements | Draughtproofing & repairs on timber | Sash windows | Casements | Doors | Energy Efficient Double Glazing | Carpentry</p>
+                <h2> Testimonials</h2>
+            </header>
+            <div class="container py-5 ">
+                   
+                <div class="row ">
+            <div class="col-md-20 mb-4 "">
+                <div class="card h-100 ">
+                    <div class="card-body ">
+                        <div class="container">
+                           
+                            <div class="testimonial">
+                                <h5>Robin</h5>
+                                <p>My parents were delighted with the quality and care taken by Prestige who have just finished installing their new double glazed windows 
+                                    On budget and on time - would highly recommend!</p>
+                            </div>
+                            <div class="testimonial">
+                                <h5>Mandy</h5>
+                                <p>Ben and Barney are very tidy and professional, they adapted the work to what I wanted and I really appreciated that they kept the work areas clean, tidying up as they went along.  They turned up when they said and the quality of workmanship was excellent, which for me demonstrated their ability to adapt came from a foundation of knowledge and experience. I wouldn't hesitate to recommend them.</p>
+                            </div>
+                            <div class="testimonial">
+                                <h5>Dan</h5>
+                                <p>Great Work, Efficient, highly communicative and great quality</p>
+                            </div>
+                            <div class="testimonial">
+                                <h5>Naomi</h5>
+                                <p>Ben and his team did a great job of replacing all of our internal doors. They arrived on time completed everything as agreed and tidied up! Very professional can highly recommend Thank you</p>
+                            </div>
+                            <div class="testimonial">
+                                <h5>James</h5>
+                                <p>The Prestige team have just installed 9 double glazed wooden sash windows in my Victorian house. The windows look great and the guys worked quickly and did a great job installing them. Would definitely recommend.</p>
+                            </div>
+                            <div class="testimonial">
+                                <h5>Lisa</h5>
+                                <p>Luke, Ben and Barney were efficient, friendly and professional throughout the window installation. They did a great job and I’d highly recommend them.</p>
+                            </div>
+                        </div>
 
+            <footer><p>&copy; 2023 Prestige Traditional Windows & Doors | Designed by WebsiteDSigns</p></footer>
+           
+            <!-- jQuery and Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>       
+        </body>
+         
+    
 
-
-        <!-- jQuery and Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-    </body>
-    <footer class="footer">&copy; 2023 Prestige Traditional Windows & Doors<br>Designed by WebsiteDSigns</footer>
-
-
-    </html>
+</html>

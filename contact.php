@@ -1,17 +1,17 @@
 <?php
-if (isset($_POST['email']) && !empty($_POST['email'])) {
-  $to = 'danstratford84@gmail.com'; 
-  $subject = "New contact request: " . $_POST['subject'];
-  $message = $_POST['body'];
-  $headers = 'From: ' . $_POST['email'] . "\r\n" .
-             'Reply-To: ' . $_POST['email'] . "\r\n" .
-             'X-Mailer: PHP/' . phpversion();
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $contactNumber = $_POST["contactNumber"];
+    $message = $_POST["message"];
 
-  if (mail($to, $subject, $message, $headers)) {
-    echo 'Thank you for your email. We will get back to you soon.';
-  } else {
-    echo 'Sorry, there was an error sending your message. Please try again later.';
-  }
+    // TODO: Perform any necessary validation on the form data
+
+    // TODO: Process the form data (e.g., send an email, store in a database, etc.)
+
+    // Redirect the user to a thank you page
+    header("Location: thank-you.html");
+    exit();
 }
 ?>
-

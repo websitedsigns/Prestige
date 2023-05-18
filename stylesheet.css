@@ -9,16 +9,18 @@
   
   body {
       min-height: 100vh;
+
       /* Set a minimum height to occupy the full viewport */
       background-color: black;
       font-family: Arial, sans-serif;
       display: flex;
+
       /* Use flexbox to position the content */
       flex-direction: column;
+
       /* Arrange the content in a column */
   }
   /* Set the text color to white */
-  
   body,
   h1,
   h2,
@@ -30,8 +32,7 @@
   a {
       color: #ffffff;
   }
-  /* Style the navbar */
-  
+  /* Style the cards */
   .card {
       background-color: #343a40;
       border-radius: 4px;
@@ -40,12 +41,12 @@
       margin-bottom: 20px;
   }
   /* Contact icons */
-  
   .contact-icon {
       width: 50px;
       height: 50px;
   }
   
+    /* nav bar */
   nav {
       background-color: #000000;
       padding: 20px;
@@ -65,6 +66,7 @@
   nav .navbar-brand {
       color: #cca837;
   }
+
   .navbar {
     display: flex;
     justify-content: center;
@@ -76,22 +78,19 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 1%;
     max-width: 8%;
-
-
   }
   
 
   /* Style the header */
-  
   header {
       background-color: #000000;
       padding: 10px;
       text-align: center;
   }
+
   /* Style the headings */
-  
   h1,
   h2,
   h3,
@@ -105,8 +104,8 @@
   p {
       line-height: 1.5;
   }
+
   /* Style the button */
-  
   .btn {
       background-color: #cca837;
       color: #222222;
@@ -117,26 +116,15 @@
       cursor: pointer;
   }
   /* Style the footer */
-  
-  .footer {
-      background-color: black;
-      font-family: Tahoma, Arial;
-      font-size: 1em;
-      color: white;
-      margin-top: auto;
-      /* Push the footer to the bottom */
-      padding: 10px;
-      white-space: nowrap;
-      /* Prevent text from wrapping */
-      overflow: hidden;
-      /* Hide overflow */
-      text-overflow: ellipsis;
-      /* Add ellipsis (...) for overflowing text */
-  }
-  
-  .footer p {
-      margin: 0;
-  }
+  footer {
+    background-color: black;
+    color:#cca837;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
   /* Media query for small screens */
   
   @media (max-width: 767px) {
@@ -154,7 +142,6 @@
       .navbar-collapse.show {
           display: block;
       }
-  
       
       header {
           padding: 20px;
