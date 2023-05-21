@@ -6,12 +6,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contactNumber = $_POST["contactNumber"];
     $message = $_POST["message"];
 
-    // TODO: Perform any necessary validation on the form data
+   // Send an email
+    $to = "enquiries@prestigetwd.co.uk";
+    $subject = "New form submission";
+    $body = "Name: " . $name . "\n"
+        . "Email: " . $email . "\n"
+        . "Contact Number: " . $contactNumber . "\n"
+        . "Message: " . $message;
 
-    // TODO: Process the form data (e.g., send an email, store in a database, etc.)
 
     // Redirect the user to a thank you page
-    header("Location: thank-you.html");
+    header("Location: index.html");
     exit();
 }
 ?>
